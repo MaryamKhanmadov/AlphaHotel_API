@@ -1,0 +1,14 @@
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Domain\bin\Debug\net7.0\AlphaHotel_API.Domain.deps.json
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Domain\bin\Debug\net7.0\AlphaHotel_API.Domain.runtimeconfig.json
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Domain\bin\Debug\net7.0\AlphaHotel_API.Domain.dll
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Domain\bin\Debug\net7.0\AlphaHotel_API.Domain.pdb
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Domain\obj\Debug\net7.0\AlphaHotel_API.Domain.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Domain\obj\Debug\net7.0\AlphaHotel_API.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Domain\obj\Debug\net7.0\AlphaHotel_API.Domain.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Domain\obj\Debug\net7.0\AlphaHotel_API.Domain.AssemblyInfo.cs
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Domain\obj\Debug\net7.0\AlphaHotel_API.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Domain\obj\Debug\net7.0\AlphaHotel_API.Domain.dll
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Domain\obj\Debug\net7.0\refint\AlphaHotel_API.Domain.dll
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Domain\obj\Debug\net7.0\AlphaHotel_API.Domain.pdb
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Domain\obj\Debug\net7.0\AlphaHotel_API.Domain.genruntimeconfig.cache
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Domain\obj\Debug\net7.0\ref\AlphaHotel_API.Domain.dll

@@ -1,0 +1,17 @@
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\obj\Debug\net7.0\AlphaHotel_API.Repository.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\obj\Debug\net7.0\AlphaHotel_API.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\obj\Debug\net7.0\AlphaHotel_API.Repository.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\obj\Debug\net7.0\AlphaHotel_API.Repository.AssemblyInfo.cs
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\obj\Debug\net7.0\AlphaHotel_API.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\bin\Debug\net7.0\AlphaHotel_API.Repository.deps.json
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\bin\Debug\net7.0\AlphaHotel_API.Repository.runtimeconfig.json
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\bin\Debug\net7.0\AlphaHotel_API.Repository.dll
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\bin\Debug\net7.0\AlphaHotel_API.Repository.pdb
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\bin\Debug\net7.0\AlphaHotel_API.Domain.dll
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\bin\Debug\net7.0\AlphaHotel_API.Domain.pdb
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\obj\Debug\net7.0\AlphaHotel_API.Repository.csproj.CopyComplete
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\obj\Debug\net7.0\AlphaHotel_API.Repository.dll
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\obj\Debug\net7.0\refint\AlphaHotel_API.Repository.dll
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\obj\Debug\net7.0\AlphaHotel_API.Repository.pdb
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\obj\Debug\net7.0\AlphaHotel_API.Repository.genruntimeconfig.cache
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Repository\obj\Debug\net7.0\ref\AlphaHotel_API.Repository.dll
