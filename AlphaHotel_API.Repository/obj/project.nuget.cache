@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vLQkj5+WLSR2zavqub5fPJhsbg8+Snc+Dm3cysn2AxusbNlTBMyfgLIT76NI/4QSOrRCNqtONPYjsc/I7iqIHg==",
+  "dgSpecHash": "+eZ6GcCasvanEcsdpj7mhWzScCp69iO/L0E0K4d/Sns6bbpJhY42K8khBuXtzYTfTihUiLCiLIqy0rDLLmnRYA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\Desktop\\AlphaHotel_API\\AlphaHotel_API.Repository\\AlphaHotel_API.Repository.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",

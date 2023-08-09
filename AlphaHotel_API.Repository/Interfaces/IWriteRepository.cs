@@ -9,8 +9,8 @@ namespace AlphaHotel_API.Repository.Interfaces
         bool Remove(T entity);
         bool RemoveRange(List<T> entities);
         Task<bool> RemoveAsync(string id);
-        bool Update(T entity);
-
+        Task<bool> Update(T entity);
+        Task SoftDeleteAsync(string id);
         Task<int> SaveAsync();
     }
 }

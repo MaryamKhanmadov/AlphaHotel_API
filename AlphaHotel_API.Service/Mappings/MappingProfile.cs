@@ -1,4 +1,5 @@
 ﻿using AlphaHotel_API.Domain.Entities;
+using AlphaHotel_API.Service.DTOs.Partner;
 using AlphaHotel_API.Service.DTOs.Product;
 using AlphaHotel_API.Service.DTOs.Room;
 using AutoMapper;
@@ -10,7 +11,10 @@ namespace AlphaHotel_API.Service.Mappings
         public MappingProfile()
         {
             CreateMap<RoomCreateDto, Room>();
-            CreateMap<Room, RoomListDto>();
+            CreateMap<Room, RoomListDto>().ReverseMap();
+            CreateMap<RoomUpdateDto, Room>().ReverseMap();
+            CreateMap<Partner, PartnerListDto>().ReverseMap();
+            CreateMap<PartnerCreateDto, Partner>();
         }
     }
 }

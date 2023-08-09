@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AlphaHotel_API.Service.DTOs.Room
+﻿namespace AlphaHotel_API.Service.DTOs.Room
 {
     public class RoomListDto
     {

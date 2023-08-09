@@ -1,25 +1,25 @@
 ﻿using AlphaHotel_API.Domain.Entities;
 using AlphaHotel_API.Repository.Interfaces;
-using AlphaHotel_API.Service.DTOs.Product;
-using AlphaHotel_API.Service.DTOs.Room;
-using AlphaHotel_API.Service.Services.Interfaces;
+using AlphaHotel_API.Service.DTOs.Partner;
+using AlphaHotel_API.Service.Services.Interfaces.Partner;
 using AutoMapper;
 
-namespace AlphaHotel_API.Service.Services
+namespace AlphaHotel_API.Service.Services.Concrets.Partners
 {
-    public class RoomWriteService : IRoomWriteService
+    public class PartnerWriteService : IPartnerWriteService
     {
+        private readonly IPartnerWriteRepository _repository;
         private readonly IMapper _mapper;
-        private readonly IRoomWriteRepository _repository;
 
-        public RoomWriteService(IMapper mapper, IRoomWriteRepository repository)
+        public PartnerWriteService(IMapper mapper, IPartnerWriteRepository repository)
         {
             _mapper = mapper;
             _repository = repository;
         }
-        public async Task CreateAsync(RoomCreateDto room)
+
+        public async Task CreateAsync(PartnerCreateDto room)
         {
-            await _repository.AddAsync(_mapper.Map<Room>(room));
+            await _repository.AddAsync(_mapper.Map<Partner>(room));
         }
 
         public Task DeleteAsync(string id)
@@ -32,7 +32,7 @@ namespace AlphaHotel_API.Service.Services
             throw new NotImplementedException();
         }
 
-        public Task UpdateAsync(string id, RoomUpdateDto room)
+        public Task UpdateAsync(string id, PartnerUpdateDto room)
         {
             throw new NotImplementedException();
         }

@@ -1,6 +1,8 @@
 ﻿using AlphaHotel_API.Service.DTOs.Product;
-using AlphaHotel_API.Service.Services.Interfaces;
+using AlphaHotel_API.Service.DTOs.Room;
+using AlphaHotel_API.Service.Services.Interfaces.Room;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace AlphaHotel_API.API.Controllers
 {
@@ -23,9 +25,32 @@ namespace AlphaHotel_API.API.Controllers
             return Ok();
         }
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public IActionResult GetAll()
         {
-            return Ok(await _readService.GetAllAsync());
+            return Ok(_readService.GetAll());
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetByIdAsync([FromQuery]string id)
+        {
+            return Ok(_readService.GetByIdAsync(id));
+        }
+        [HttpPut]
+        public async Task<IActionResult> Update([FromQuery][Required] string id, RoomUpdateDto room)
+        {
+            try
+            {
+                await _writeService.UpdateAsync(id, room);
+                return Ok();
+            }
+            catch (NullReferenceException)
+            {
+                return NotFound();
+            }
+        }
+        [HttpGet]
+        public IActionResult Search([FromQuery]string? search)
+        {
+            return Ok(_readService.Search(search.ToLower()));
         }
     }
 }

@@ -1,12 +1,13 @@
 ﻿using AlphaHotel_API.Domain.Entities;
 using AlphaHotel_API.Repository.Contexts;
 using AlphaHotel_API.Repository.Interfaces;
+using AlphaHotel_API.Repository.Repositories;
 
 namespace AlphaHotel_API.Repository
 {
-    public class RoomWriteRepository : WriteRepository<Room>, IRoomWriteRepository
+    public class RoomReadRepository : ReadRepository<Room>, IRoomReadRepository
     {
-        public RoomWriteRepository(AppDbContext context) : base(context)
+        public RoomReadRepository(AppDbContext context) : base(context)
         {
         }
     }

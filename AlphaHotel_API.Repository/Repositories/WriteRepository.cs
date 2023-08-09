@@ -4,7 +4,7 @@ using AlphaHotel_API.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
-namespace AlphaHotel_API.Repository
+namespace AlphaHotel_API.Repository.Repositories
 {
     public class WriteRepository<T> : IWriteRepository<T> where T : BaseEntity
     {
@@ -19,7 +19,7 @@ namespace AlphaHotel_API.Repository
         public async Task<bool> AddAsync(T entity)
         {
             EntityEntry<T> entityEntry = await Table.AddAsync(entity);
-            await _context.SaveChangesAsync();
+            await SaveAsync();
             return entityEntry.State == EntityState.Added;
         }
 
@@ -28,27 +28,36 @@ namespace AlphaHotel_API.Repository
             throw new NotImplementedException();
         }
 
-        public bool Remove(T entity)
+        public async Task<bool> Update(T entity)
         {
-            throw new NotImplementedException();
+            if (entity == null) throw new ArgumentNullException();
+            EntityEntry entityEntry = Table.Update(entity);
+            await SaveAsync();
+            return entityEntry.State == EntityState.Modified;
         }
 
-        public Task<bool> RemoveAsync(string id)
+        public bool Remove(T entity)
         {
-            throw new NotImplementedException();
+            EntityEntry<T> entityEntry = Table.Remove(entity);
+            return entityEntry.State == EntityState.Deleted;
+        }
+
+        public async Task<bool> RemoveAsync(string id)
+        {
+            T model = await Table.FirstOrDefaultAsync(data => data.Id == Guid.Parse(id));
+            return Remove(model);
         }
 
         public bool RemoveRange(List<T> entities)
         {
-            throw new NotImplementedException();
+            Table.RemoveRange(entities); 
+            return true;
         }
 
-        public Task<int> SaveAsync()
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<int> SaveAsync()
+         => await _context.SaveChangesAsync();
 
-        public bool Update(T entity)
+        public Task SoftDeleteAsync(string id)
         {
             throw new NotImplementedException();
         }

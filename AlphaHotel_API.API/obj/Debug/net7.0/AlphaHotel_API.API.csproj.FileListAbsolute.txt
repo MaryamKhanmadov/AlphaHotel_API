@@ -49,3 +49,6 @@ C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.API\obj\Debug\net7.0\refint\
 C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.API\obj\Debug\net7.0\AlphaHotel_API.API.pdb
 C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.API\obj\Debug\net7.0\AlphaHotel_API.API.genruntimeconfig.cache
 C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.API\obj\Debug\net7.0\ref\AlphaHotel_API.API.dll
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.API\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.API\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.API\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
