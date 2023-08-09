@@ -8,18 +8,20 @@ namespace AlphaHotel_API.Service.Services.Concrets.Partners
 {
     public class PartnerWriteService : IPartnerWriteService
     {
-        private readonly IPartnerWriteRepository _repository;
+        private readonly IPartnerWriteRepository _repositoryWrite;
+        private readonly IPartnerReadRepository _repositoryRead;
         private readonly IMapper _mapper;
 
-        public PartnerWriteService(IMapper mapper, IPartnerWriteRepository repository)
+        public PartnerWriteService(IMapper mapper, IPartnerWriteRepository repositoryWrite, IPartnerReadRepository repositoryRead)
         {
             _mapper = mapper;
-            _repository = repository;
+            _repositoryWrite = repositoryWrite;
+            _repositoryRead = repositoryRead;
         }
 
         public async Task CreateAsync(PartnerCreateDto room)
         {
-            await _repository.AddAsync(_mapper.Map<Partner>(room));
+            await _repositoryWrite.AddAsync(_mapper.Map<Partner>(room));
         }
 
         public Task DeleteAsync(string id)
@@ -32,9 +34,10 @@ namespace AlphaHotel_API.Service.Services.Concrets.Partners
             throw new NotImplementedException();
         }
 
-        public Task UpdateAsync(string id, PartnerUpdateDto room)
+        public async Task UpdateAsync(string id, PartnerUpdateDto partner)
         {
-            throw new NotImplementedException();
+            var dbPartner = await _repositoryRead.GetByIdAsyncRepo(id);
+            _repositoryWrite.Update(_mapper.Map(partner, dbPartner));
         }
     }
 }

@@ -15,6 +15,7 @@ namespace AlphaHotel_API.Service.Mappings
             CreateMap<RoomUpdateDto, Room>().ReverseMap();
             CreateMap<Partner, PartnerListDto>().ReverseMap();
             CreateMap<PartnerCreateDto, Partner>();
+            CreateMap<PartnerUpdateDto, Partner>().ReverseMap();
         }
     }
 }

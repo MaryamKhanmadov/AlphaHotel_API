@@ -1,4 +1,5 @@
-﻿using AlphaHotel_API.Repository.Interfaces;
+﻿using AlphaHotel_API.Domain.Entities;
+using AlphaHotel_API.Repository.Interfaces;
 using AlphaHotel_API.Service.DTOs.Partner;
 using AlphaHotel_API.Service.Services.Interfaces.Partner;
 using AutoMapper;
@@ -25,10 +26,18 @@ namespace AlphaHotel_API.Service.Services.Concrets.Partners
             return _mapper.Map<PartnerListDto>(await _repository.GetByIdAsyncRepo(id,false));
         }
 
-        public async Task<List<PartnerListDto>> SearchAsync(string searchText)
+        public List<PartnerListDto> Search(string? searchText)
         {
-            throw new NotImplementedException();
-            //return _mapper.Map<List<PartnerListDto>>(await _repository.GetWhere(m=>m.Name.StartsWith(searchText),false));
+            List<Partner> searchPartners = new();
+            if (searchText != null)
+            {
+                searchPartners = (_repository.GetWhere(m => m.Name.ToLower().Contains(searchText), false).ToList());
+            }
+            else
+            {
+                searchPartners = _repository.GetAll(false).ToList();
+            }
+            return _mapper.Map<List<PartnerListDto>>(searchPartners);
         }
     }
 }

@@ -50,7 +50,7 @@ namespace AlphaHotel_API.API.Controllers
         [HttpGet]
         public IActionResult Search([FromQuery]string? search)
         {
-            return Ok(_readService.Search(search.ToLower()));
+            return Ok(_readService.Search(search is not null ? search.ToLower() : search));
         }
     }
 }
