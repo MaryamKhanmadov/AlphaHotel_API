@@ -1,8 +1,3 @@
-C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\obj\Debug\net7.0\AlphaHotel_API.Service.csproj.AssemblyReference.cache
-C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\obj\Debug\net7.0\AlphaHotel_API.Service.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\obj\Debug\net7.0\AlphaHotel_API.Service.AssemblyInfoInputs.cache
-C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\obj\Debug\net7.0\AlphaHotel_API.Service.AssemblyInfo.cs
-C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\obj\Debug\net7.0\AlphaHotel_API.Service.csproj.CoreCompileInputs.cache
 C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\bin\Debug\net7.0\AlphaHotel_API.Service.deps.json
 C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\bin\Debug\net7.0\AlphaHotel_API.Service.runtimeconfig.json
 C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\bin\Debug\net7.0\AlphaHotel_API.Service.dll
@@ -11,6 +6,11 @@ C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\bin\Debug\net7.0\Alp
 C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\bin\Debug\net7.0\AlphaHotel_API.Repository.dll
 C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\bin\Debug\net7.0\AlphaHotel_API.Repository.pdb
 C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\bin\Debug\net7.0\AlphaHotel_API.Domain.pdb
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\obj\Debug\net7.0\AlphaHotel_API.Service.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\obj\Debug\net7.0\AlphaHotel_API.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\obj\Debug\net7.0\AlphaHotel_API.Service.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\obj\Debug\net7.0\AlphaHotel_API.Service.AssemblyInfo.cs
+C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\obj\Debug\net7.0\AlphaHotel_API.Service.csproj.CoreCompileInputs.cache
 C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\obj\Debug\net7.0\AlphaHotel_API.Service.csproj.CopyComplete
 C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\obj\Debug\net7.0\AlphaHotel_API.Service.dll
 C:\Users\Asus\Desktop\AlphaHotel_API\AlphaHotel_API.Service\obj\Debug\net7.0\refint\AlphaHotel_API.Service.dll

@@ -1,9 +1,12 @@
+using AlphaHotel_API.Domain.Entities;
 using AlphaHotel_API.Repository;
+using AlphaHotel_API.Repository.Contexts;
 using AlphaHotel_API.Service;
 using AlphaHotel_API.Service.Filters;
 using AlphaHotel_API.Service.Mappings;
 using AlphaHotel_API.Service.Validators.Rooms;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +20,8 @@ builder.Services.AddControllers(options =>
 })
     .AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<CreateRoomValidator>())
     .ConfigureApiBehaviorOptions(options => options.SuppressModelStateInvalidFilter = true);
+
+builder.Services.AddIdentity<AppUser,IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -1,16 +1,18 @@
 ﻿using AlphaHotel_API.Domain.Common;
 using AlphaHotel_API.Domain.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace AlphaHotel_API.Repository.Contexts
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
         public DbSet<Room> Rooms { get; set; }
         public DbSet<Partner> Partners { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
             //ChangeTracker : Entityler üzerinden yapılan değişiklerin ya da yeni eklenen verinin yakalanmasını sağlayan propertydir. Update operasyonlarında Track edilen verileri yakalayıp elde etmemizi sağlar.
