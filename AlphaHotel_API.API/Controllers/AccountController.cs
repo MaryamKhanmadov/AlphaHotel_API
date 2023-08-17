@@ -20,5 +20,18 @@ namespace AlphaHotel_API.API.Controllers
         {
             return await _accountService.RegisterAsync(user);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Login([FromBody] LoginDto user)
+        {
+            return Ok(await _accountService.LoginAsync(user));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateRole([FromBody] RoleDto role)
+        {
+            await _accountService.CreateRoleAsync(role);
+            return Ok();
+        }
     }
 }

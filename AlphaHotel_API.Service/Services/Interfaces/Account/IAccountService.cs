@@ -4,7 +4,8 @@ namespace AlphaHotel_API.Service.Services.Interfaces.Account
 {
     public interface IAccountService
     {
-        Task LoginAsync(LoginDto model);
+        Task<string?> LoginAsync(LoginDto model);
         Task<ApiResponse> RegisterAsync(RegisterDto model);
+        Task CreateRoleAsync(RoleDto model);
     }
 }

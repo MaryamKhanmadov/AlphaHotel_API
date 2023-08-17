@@ -1,6 +1,7 @@
 ﻿using AlphaHotel_API.Service.DTOs.Product;
 using AlphaHotel_API.Service.DTOs.Room;
 using AlphaHotel_API.Service.Services.Interfaces.Room;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 
@@ -18,12 +19,14 @@ namespace AlphaHotel_API.API.Controllers
             _readService = readService;
             _writeService = writeService;
         }
+        [Authorize(Roles = "SuperAdmin")]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody]RoomCreateDto room)
         {
             await _writeService.CreateAsync(room);
             return Ok();
         }
+        [Authorize(Roles ="SuperAdmin, Member")]
         [HttpGet]
         public IActionResult GetAll()
         {

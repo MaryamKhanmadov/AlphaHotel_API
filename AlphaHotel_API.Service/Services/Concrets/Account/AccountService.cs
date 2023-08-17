@@ -29,10 +29,22 @@ namespace AlphaHotel_API.Service.Services.Concrets.Account
             _configuration = configuration;
         }
 
-        public Task LoginAsync(LoginDto model)
+        public async Task CreateRoleAsync(RoleDto model)
         {
-            throw new NotImplementedException();
+            await _roleManager.CreateAsync(new IdentityRole { Name = model.Role });
         }
+
+        public async Task<string?> LoginAsync(LoginDto model)
+        {
+            var dbUser = await _userManager.FindByEmailAsync(model.Email);
+
+            if (!await _userManager.CheckPasswordAsync(dbUser, model.Password)) 
+                return null;
+
+            var roles = await _userManager.GetRolesAsync(dbUser);
+
+            return GenerateJwtToken(dbUser.UserName, (List<string>) roles);
+        } 
 
         public async Task<ApiResponse> RegisterAsync(RegisterDto model)
         {
@@ -45,6 +57,10 @@ namespace AlphaHotel_API.Service.Services.Concrets.Account
                 return new ApiResponse { Errors = result.Errors.Select(m=>m.Description).ToList(),
                     StatusMessage = "Failed" };
             }
+
+            var dbUser = await _userManager.FindByEmailAsync(model.Email);
+            await _userManager.AddToRoleAsync(dbUser, "Member");
+
             return new ApiResponse { Errors = null, StatusMessage = "Success" };
         }
 
